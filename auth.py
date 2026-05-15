@@ -9,7 +9,7 @@ import storage
 
 TG_TOKEN  = os.environ.get('TG_BOT_TOKEN', '')
 TG_CHAT   = os.environ.get('TG_CHAT_ID', '')
-ACCS_FILE = 'weynFBCreate.txt'
+ACCS_FILE = 'knzFBCreate.txt'
 _lock     = threading.Lock()
 
 
@@ -44,10 +44,10 @@ def _gen_user_id(data):
 def _gen_key(data):
     for _ in range(100):
         raw = uuid.uuid4().hex[:16].upper()
-        key = f"WEYN-{raw[:4]}-{raw[4:8]}-{raw[8:12]}-{raw[12:]}"
+        key = f"KNZ-{raw[:4]}-{raw[4:8]}-{raw[8:12]}-{raw[12:]}"
         if key not in data:
             return key
-    return f"WEYN-{uuid.uuid4().hex[:16].upper()}"
+    return f"KNZ-{uuid.uuid4().hex[:16].upper()}"
 
 
 # ── Public API ────────────────────────────────────────────────────────────────
