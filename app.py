@@ -976,7 +976,7 @@ def status():
 
 # ── Admin auth ────────────────────────────────────────────────────────────────
 
-ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'yuennix')
+ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', '0223')
 
 def _require_admin():
     return session.get('is_admin') is True
