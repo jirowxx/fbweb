@@ -69,7 +69,7 @@ _DEFAULT = {
     "domain_password": "0223",
     "temp": [
         "1secmail.com", "harakirimail.com",
-        "yopmai.com", 
+        "yopmail.com", "lcxmail.site",
     ],
     "custom": [
         {"domain": "ygmail.cfd",    "imap_host": "mail.ygmail.cfd",    "imap_user": "admin@ygmail.cfd",    "imap_pass": "0223"},
