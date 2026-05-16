@@ -880,7 +880,7 @@ def status():
 
 # ── Admin auth ────────────────────────────────────────────────────────────────
 
-ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', '0223')
+ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'chrx')
 
 def _require_admin():
     return session.get('is_admin') is True
